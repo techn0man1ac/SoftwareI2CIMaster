@@ -1,5 +1,5 @@
 /* 
-  Software I2C master protocol implementation to any microcontroller: Atmega, STM32, ESP32 ect. 
+  Software I2C master protocol implementation to any microcontroller: Atmega, STM32, ESP32 ect. with any pins. 
   Thanks ChatGPT for help.
 
   
