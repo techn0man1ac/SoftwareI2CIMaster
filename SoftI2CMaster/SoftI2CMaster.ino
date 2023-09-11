@@ -1,5 +1,8 @@
 /* 
   Software I2C master protocol implementation to any microcontroller: Atmega, STM32, ESP32 ect. 
+  Thanks ChatGPT for help.
+
+  
   By Serhii Trush for MIT License
   https://github.com/techn0man1ac/SoftwareI2CIMaster
 */
