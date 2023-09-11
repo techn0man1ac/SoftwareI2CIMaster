@@ -35,7 +35,7 @@ void i2c_stop() {
   digitalWrite(SDA_PIN, HIGH);
 }
 
-void i2c_send_byte(uint8_t byte) {
+uint8_t i2c_send_byte(uint8_t byte) {
   pinMode(SDA_PIN, OUTPUT);
   for (int i = 7; i >= 0; i--) {
     digitalWrite(SDA_PIN, (byte >> i) & 0x01);  // bitwise AND operation(00,01,10->0 and 11->1)
@@ -48,9 +48,10 @@ void i2c_send_byte(uint8_t byte) {
   digitalWrite(SDA_PIN, HIGH);
   digitalWrite(SCL_PIN, HIGH);
   delayMicroseconds(2);
-  int ack = digitalRead(SDA_PIN);  // Gotcha
+  uint8_t ack = digitalRead(SDA_PIN);  // Gotcha
   digitalWrite(SCL_PIN, LOW);
   delayMicroseconds(2);
+  return ack;
 }
 
 void setup() {
