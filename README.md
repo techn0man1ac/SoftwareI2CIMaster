@@ -2,7 +2,9 @@
 
 ![Job](https://raw.githubusercontent.com/techn0man1ac/SoftwareI2CIMaster/main/Img/ezgif-2-92b3f45327.gif "Job")
 
-Software I2C master protocol implementation to any microcontroller: Atmega, STM32, ESP32, Arduino code here:
+Software I2C master protocol implementation to any microcontroller: Atmega, STM32, ESP32 ect. 
+
+Arduino code here(thanks ChatGPT for help):
 
 https://github.com/techn0man1ac/SoftwareI2CIMaster/tree/main/SoftI2CMaster
 
